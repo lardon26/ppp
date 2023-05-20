@@ -1,0 +1,217 @@
+html{
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF;
+}
+.main-title{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.informations{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-container{
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.recommencer{
+    justify-content: center;
+    margin-top: 3%;
+    background-color: #67cef2;
+}
+
+
+/* Le boutoncentre du bouton recommencer est centré et à la même hauteur que les textes nombre de paire temps */
+.recommencer{
+    margin-top: 1.5%;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recommencer:hover{
+    background-color: #56adcc;
+    cursor: pointer;
+    height: 55px;
+    width: 155px;
+}
+
+
+
+.cartes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reponse{
+    font-size: 0.8rem;
+    transition: all 0.5s ease-in-out;
+    background-color: red;
+    cursor: pointer;
+    height: 50px;
+    width: 75px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.reponse:hover{
+    height: 45px;
+    width: 70px;
+    cursor: pointer;
+    /*Le grossisement par du centre de la carte et les autres cartes ne bougent pas*/
+    /*transform: translate(-10px, -10px, -10px);*/
+    transform: scale(1.1, 1.1);
+}
+
+.reponse:hover{
+    background-color: rgba(212, 11, 38, 0.897);
+}
+
+.carte {
+    font-size: 2rem;
+    perspective: 1000px;
+    position: relative;
+    height: 210px;
+    width: 210px;
+  }
+
+.carte:hover{
+    cursor: pointer;
+    /*Le grossisement par du centre de la carte et les autres cartes ne bougent pas*/
+    /*transform: translate(-10px, -10px, -10px);*/
+    transform: scale(1.1, 1.1);
+}
+  
+  .carte .recto,
+  .carte .verso {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 15px;
+  }
+  
+
+
+  /* Règles pour le recto de toutes les cartes */
+  .carte .recto {
+    background-color: #67cef2;
+    /* Ajoutez ici le contenu de la face avant de la carte */
+  }
+
+  .carte .recto:hover{
+    background-color: #56adcc;
+    /* Ajoutez ici le contenu de la face avant de la carte */
+  }
+  
+  .carte1 .verso {
+    background-color: #bde0ff;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  /* Règles pour le verso de toutes les cartes */
+  .carte2 .verso {
+    background-color: #874cb9;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  .carte3 .verso {
+    background-color: #df7f81;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  .carte4 .verso {
+    background-color: #a4dbb4;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  .carte5 .verso {
+    background-color: #a0c7c0;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  .carte6 .verso {
+    background-color: #e2dfbd;
+    /* Ajoutez ici le contenu de la face arrière de la carte */
+    transform: rotateY(180deg);
+  }
+  
+
+  /* Règles pour les cartes qui ont la classe "visible" */
+  .carte.visible .verso {
+    transform: rotateY(0deg);
+  }
+  
+  .carte.visible .recto {
+    transform: rotateY(180deg);
+  }
+
+.slides{
+  /*l'image est centré*/
+  height: 100%;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  border-radius: 15px;
+}
+
+
+img{
+  /*les images sont au centre de la carte*/
+  margin-left: 15%;
+  margin-top: 15%;
+  height: 70%;
+  width: 70%;
+  border-radius: 15px;
+}
+
+/*les textes dans les cartes sont centrés*/
+.annecdotes{
+  text-align: center;
+  margin-top: 25%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/* si l'écran est resseré les cartes sont en colonne*/
+@media screen and (max-width: 850px) {
+  .cartes{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+.cartes {
+  margin-top: 3%;
+}
+.game-container {
+  margin-top: 2%;
+}
