@@ -181,11 +181,18 @@ img{
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
+  /*les cartes sont centrés et le game contenair est responsive*/
   .cartes{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
   }
+  .informations{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 .cartes {
@@ -195,13 +202,7 @@ img{
   margin-top: 2%;
 }
 
-@media screen and (max-width: 600px) {
-  .cartes{
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-}
+
 
 .footer{
   margin-top: 25%;
