@@ -132,33 +132,33 @@ body{
   
   .carte1 .verso {
     background-color: #bde0ff;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    /* Livre  + */
     transform: rotateY(180deg);
   }
-  /* Règles pour le verso de toutes les cartes */
+
   .carte2 .verso {
-    background-color: #874cb9;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    background-color: #77a6ff;
+    /* Musculation + */
     transform: rotateY(180deg);
   }
   .carte3 .verso {
     background-color: #df7f81;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    /* Basket + */
     transform: rotateY(180deg);
   }
   .carte4 .verso {
     background-color: #a4dbb4;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    /* Jeux-vidéos + */
     transform: rotateY(180deg);
   }
   .carte5 .verso {
-    background-color: #a0c7c0;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    background-color: #FDFD96;
+    /* Anime */
     transform: rotateY(180deg);
   }
   .carte6 .verso {
     background-color: #e2dfbd;
-    /* Ajoutez ici le contenu de la face arrière de la carte */
+    /* Sneakers + */
     transform: rotateY(180deg);
   }
   
@@ -214,4 +214,20 @@ img{
 }
 .game-container {
   margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .cartes{
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+.footer{
+  margin-top: 15%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
-    <link rel="stylesheet" type="text/css" href="../site_memory/memoryStyle.css">
+    <link rel="stylesheet" type="text/css" href="memoryStyle.css">
     
 </head>
 <body>
@@ -15,7 +15,7 @@
 
     <div class="title">
 
-        <h1 class="main-title">Bienvenue sur la page du jeu de mémory d'Hippolyte Guilloteau</h1>
+        <h1 class="main-title">Jeu de mémory</h1>
 
     </div>
 
@@ -34,142 +34,126 @@
     </div>
 
     <div class="cartes">
-            <!-- LEs cartes ont une valeur cachée dans leur dos toutes différentes par paire-->
-            
- 
-            
-            
-              <div class="carte carte1" data-class="paire1" onclick="verifierPaire(this)">
-                <div class="recto">
-                  <img src="../site_memory/montage/interrogation.png">
-                </div>
-                <div class="verso">
-                  <img src="../site_memory/montage/livre.png" alt="Livre">
-                </div>
-              </div>
 
-              <div class="carte carte1" data-class="paire1" onclick="verifierPaire(this)">
-                <div class="recto">
-                  <img src="../site_memory/montage/interrogation.png">
-                </div>
-                <div class="verso">
-                  <img src="../site_memory/montage/livre.png" alt="Livre">
-                </div>
-              </div>
-              
-                <div class="carte carte2" data-class="paire2" onclick="verifierPaire(this)">
-                  <div class="recto">
-                    <img src="../site_memory/montage/interrogation.png">
-                  </div>
-                  <div class="verso">
-                    <img src="../site_memory/montage/arnold.webp" alt="Muscu">
-                  </div>
-                </div>
+      <div class="carte carte1" data-class="paire1" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/livre.png" alt="Livre">
+        </div>
+      </div>
 
-                  <div class="carte carte2"  data-class="paire2" onclick="verifierPaire(this)">
-                    <div class="recto">
-                      <img src="../site_memory/montage/interrogation.png">
-                    </div>
-                    <div class="verso">
-                      <img src="../site_memory/montage/arnold.webp" alt="Muscu">
-                    </div>
-                  </div>
+      <div class="carte carte1" data-class="paire1" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/livre.png" alt="Livre">
+        </div>
+      </div>
 
-                    <div class="carte carte3" data-class="paire3" onclick="verifierPaire(this)">
-                      <div class="recto">
-                        <img src="../site_memory/montage/interrogation.png">
-                      </div>
-                      <div class="verso">
-                        <img src="../site_memory/montage/basket.png" alt="basket">
-                      </div>
-                    </div>
+      <div class="carte carte2" data-class="paire2" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/arnold.webp" alt="Steve Jobs">
+        </div>
+      </div>
+      
+      <div class="carte carte2" data-class="paire2" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/arnold.webp" alt="Steve Jobs">
+        </div>
+      </div>
 
-                      <div class="carte carte3" data-class="paire3" onclick="verifierPaire(this)">
-                        <div class="recto">
-                          <img src="../site_memory/montage/interrogation.png">
-                        </div>
-                        <div class="verso">
-                          <img src="../site_memory/montage/basket.png" alt="basket">
-                        </div>
-                      </div>
+      <div class="carte carte3" data-class="paire3" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/basket.png" alt="Steve Jobs">
+        </div>
+      </div>
+      
+      <div class="carte carte3" data-class="paire3" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/basket.png" alt="Steve Jobs">
+        </div>
+      </div>
 
-                        <div class="carte carte4" data-class="paire4" onclick="verifierPaire(this)">
-                          <div class="recto">
-                            <img src="../site_memory/montage/interrogation.png">
-                          </div>
-                          <div class="verso">
-                            <img src="../site_memory/montage/jeux_vidéo.png" alt="jeux vidéo">
-                          </div>
-                        </div>
+      <div class="carte carte4" data-class="paire4" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/jeux_vidéo.png" alt="Steve Jobs">
+        </div>
+      </div>
+      
+      <div class="carte carte4" data-class="paire4" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/jeux_vidéo.png" alt="Steve Jobs">
+        </div>
+      </div>
 
-                          <div class="carte carte4" data-class="paire4" onclick="verifierPaire(this)">
-                            <div class="recto">
-                              <img src="../site_memory/montage/interrogation.png">
-                            </div>
-                            <div class="verso">
-                              <img src="../site_memory/montage/jeux_vidéo.png" alt="jeux vidéo">
-                            </div>
-                          </div>
+      <div class="carte carte5" data-class="paire5" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/anime.png" alt="Steve Jobs">
+        </div>
+      </div>
+      
+      <div class="carte carte5" data-class="paire5" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img src="montage/anime.png" alt="Steve Jobs">
+        </div>
+      </div>
 
-                            <div class="carte carte5" data-class="paire5" onclick="verifierPaire(this)">
-                              <div class="recto">
-                                <img src="../site_memory/montage/interrogation.png">
-                              </div>
-                              <div class="verso">
-                                <img src="../site_memory/montage/anime.png" alt="anime">
-                              </div>
-                            </div>
-
-                              <div class="carte carte5" data-class="paire5" onclick="verifierPaire(this)">
-                                <div class="recto">
-                                  <img src="../site_memory/montage/interrogation.png">
-                                </div>
-                                <div class="verso">
-                                  <img src="../site_memory/montage/anime.png" alt="anime">
-                                </div>
-                              </div>
-
-                                <div class="carte carte6" data-class="paire6" onclick="verifierPaire(this)">
-                                  <div class="recto">
-                                    <img src="../site_memory/montage/interrogation.png">
-                                  </div>
-                                  <div class="verso">
-                                    <img class ="slides" src="../site_memory/montage/sneakers.png" alt="lire">
-                                  </div>
-                                </div>
-
-                                  <div class="carte carte6" data-class="paire6" onclick="verifierPaire(this)">
-                                    <div class="recto">
-                                      <img src="../site_memory/montage/interrogation.png">
-                                    </div>
-                                    <div class="verso">
-                                      <img class ="slides" src="../site_memory/montage/sneakers.png" alt="lire">
-                                    </div>
-                                  </div>
-
+      <div class="carte carte6" data-class="paire6" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img class ="slides" src="montage/sneakers.png" alt="Steve Jobs">
+        </div>
+      </div>
+      
+      <div class="carte carte6" data-class="paire6" onclick="verifierPaire(this)">
+        <div class="recto">
+          <img src="montage/interrogation.png">
+        </div>
+        <div class="verso">
+          <img class ="slides" src="montage/sneakers.png" alt="Steve Jobs">
+        </div>
+      </div>
 
   
 
-                    
-  
-
-            
-
-    </div>
 
 </div>
-<!--https://www.youtube.com/watch?v=28VfzEiJgy4&t=1007s
+<footer>
+    <div class="footer">
+        <p>© 2023 - Tous droits réservés</p>
+        <p>Site réalisé par Hippolyte Guilloteau</a></p>
 
-    - Muscu 
-    - Basket
-    - Jeux vidéo 
-    - Animé 
-    - Steve Jobs 
-    - Lire
-    - Grimper arbre
-    - Construire cabane 
-    - 
--->
-<script src="../site_memory/memoryScript.js"></script>
+    </div>
+</footer>
+<script src="memoryScript.js"></script>
 </body>
 </html>
