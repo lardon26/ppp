@@ -37,8 +37,6 @@ body{
     background-color: #67cef2;
 }
 
-
-/* Le boutoncentre du bouton recommencer est centré et à la même hauteur que les textes nombre de paire temps */
 .recommencer{
     margin-top: 1.5%;
     height: 50px;
@@ -82,8 +80,6 @@ body{
     height: 45px;
     width: 70px;
     cursor: pointer;
-    /*Le grossisement par du centre de la carte et les autres cartes ne bougent pas*/
-    /*transform: translate(-10px, -10px, -10px);*/
     transform: scale(1.1, 1.1);
 }
 
@@ -101,8 +97,6 @@ body{
 
 .carte:hover{
     cursor: pointer;
-    /*Le grossisement par du centre de la carte et les autres cartes ne bougent pas*/
-    /*transform: translate(-10px, -10px, -10px);*/
     transform: scale(1.1, 1.1);
 }
   
@@ -119,51 +113,40 @@ body{
   
 
 
-  /* Règles pour le recto de toutes les cartes */
   .carte .recto {
     background-color: #67cef2;
-    /* Ajoutez ici le contenu de la face avant de la carte */
   }
 
   .carte .recto:hover{
     background-color: #56adcc;
-    /* Ajoutez ici le contenu de la face avant de la carte */
   }
   
   .carte1 .verso {
     background-color: #bde0ff;
-    /* Livre  + */
     transform: rotateY(180deg);
   }
 
   .carte2 .verso {
     background-color: #77a6ff;
-    /* Musculation + */
     transform: rotateY(180deg);
   }
   .carte3 .verso {
     background-color: #df7f81;
-    /* Basket + */
     transform: rotateY(180deg);
   }
   .carte4 .verso {
     background-color: #a4dbb4;
-    /* Jeux-vidéos + */
     transform: rotateY(180deg);
   }
   .carte5 .verso {
     background-color: #FDFD96;
-    /* Anime */
     transform: rotateY(180deg);
   }
   .carte6 .verso {
     background-color: #e2dfbd;
-    /* Sneakers + */
     transform: rotateY(180deg);
   }
-  
 
-  /* Règles pour les cartes qui ont la classe "visible" */
   .carte.visible .verso {
     transform: rotateY(0deg);
   }
@@ -173,7 +156,6 @@ body{
   }
 
 .slides{
-  /*l'image est centré*/
   height: 100%;
   width: 100%;
   margin-left: 0%;
@@ -183,7 +165,6 @@ body{
 
 
 img{
-  /*les images sont au centre de la carte*/
   margin-left: 15%;
   margin-top: 15%;
   height: 70%;
@@ -191,7 +172,6 @@ img{
   border-radius: 15px;
 }
 
-/*les textes dans les cartes sont centrés*/
 .annecdotes{
   text-align: center;
   margin-top: 25%;
@@ -201,7 +181,6 @@ img{
 
 }
 
-/* si l'écran est resseré les cartes sont en colonne*/
 @media screen and (max-width: 850px) {
   .cartes{
     grid-template-columns: repeat(2, 1fr);
